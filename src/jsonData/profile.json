@@ -1,0 +1,42 @@
+{
+  "profile": {
+    "provider": "google",
+    "sub": "115987064282754163674",
+    "id": "115987064282754163674",
+    "displayName": "김건",
+    "name": {
+      "givenName": "건",
+      "familyName": "김"
+    },
+    "given_name": "건",
+    "family_name": "김",
+    "email_verified": true,
+    "verified": true,
+    "language": "ko",
+    "email": "gunpoll823@gmail.com",
+    "emails": [
+      {
+        "value": "gunpoll823@gmail.com",
+        "type": "account"
+      }
+    ],
+    "photos": [
+      {
+        "value": "https://lh3.googleusercontent.com/a/AATXAJwGt3FNeHqem8dCIvZTaxL6OhGswz44n5vqQQ7hIg=s96-c",
+        "type": "default"
+      }
+    ],
+    "picture": "https://lh3.googleusercontent.com/a/AATXAJwGt3FNeHqem8dCIvZTaxL6OhGswz44n5vqQQ7hIg=s96-c",
+    "_raw": "{\n  \"sub\": \"115987064282754163674\",\n  \"name\": \"김건\",\n  \"given_name\": \"건\",\n  \"family_name\": \"김\",\n  \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJwGt3FNeHqem8dCIvZTaxL6OhGswz44n5vqQQ7hIg\\u003ds96-c\",\n  \"email\": \"gunpoll823@gmail.com\",\n  \"email_verified\": true,\n  \"locale\": \"ko\"\n}",
+    "_json": {
+      "sub": "115987064282754163674",
+      "name": "김건",
+      "given_name": "건",
+      "family_name": "김",
+      "picture": "https://lh3.googleusercontent.com/a/AATXAJwGt3FNeHqem8dCIvZTaxL6OhGswz44n5vqQQ7hIg=s96-c",
+      "email": "gunpoll823@gmail.com",
+      "email_verified": true,
+      "locale": "ko"
+    }
+  }
+}

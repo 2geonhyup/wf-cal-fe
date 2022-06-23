@@ -1,0 +1,184 @@
+{
+  "eventList": {
+    "kind": "calendar#events",
+    "etag": "\"p33s8fp7hnqovg0g\"",
+    "summary": "고려대 학사 일정",
+    "description": "고려대학교 학사 일정",
+    "updated": "2022-06-16T07:53:16.971Z",
+    "timeZone": "Asia/Seoul",
+    "accessRole": "owner",
+    "defaultReminders": [
+      
+    ],
+    "nextSyncToken": "CPiH5PG-sfgCEPiH5PG-sfgCGAUg87KI2QE=",
+    "items": [
+      {
+        "kind": "calendar#event",
+        "etag": "\"3310731944356000\"",
+        "id": "7igmmkn1501lkfhrgdo7pc3lcr",
+        "status": "confirmed",
+        "htmlLink": "https://www.google.com/calendar/event?eid=N2lnbW1rbjE1MDFsa2ZocmdkbzdwYzNsY3IgY192b2t2YmMzc2dpbXNuZ3FmM2ltcHJsbmJwa0Bn",
+        "created": "2022-06-16T07:52:52.000Z",
+        "updated": "2022-06-16T07:52:52.178Z",
+        "summary": "6.16 일정",
+        "creator": {
+          "email": "gunpol@korea.ac.kr"
+        },
+        "organizer": {
+          "email": "c_vokvbc3sgimsngqf3imprlnbpk@group.calendar.google.com",
+          "displayName": "Waffle_0",
+          "self": true
+        },
+        "start": {
+          "date": "2022-06-16"
+        },
+        "end": {
+          "date": "2022-06-17"
+        },
+        "transparency": "transparent",
+        "iCalUID": "7igmmkn1501lkfhrgdo7pc3lcr@google.com",
+        "sequence": 0,
+        "reminders": {
+          "useDefault": false
+        },
+        "eventType": "default"
+      },
+      {
+        "kind": "calendar#event",
+        "etag": "\"3310731963432000\"",
+        "id": "50hbra6sionr7jrrfkq281usv1",
+        "status": "confirmed",
+        "htmlLink": "https://www.google.com/calendar/event?eid=NTBoYnJhNnNpb25yN2pycmZrcTI4MXVzdjEgY192b2t2YmMzc2dpbXNuZ3FmM2ltcHJsbmJwa0Bn",
+        "created": "2022-06-16T07:53:01.000Z",
+        "updated": "2022-06-16T07:53:01.716Z",
+        "summary": "6.24 종강",
+        "creator": {
+          "email": "gunpol@korea.ac.kr"
+        },
+        "organizer": {
+          "email": "c_vokvbc3sgimsngqf3imprlnbpk@group.calendar.google.com",
+          "displayName": "Waffle_0",
+          "self": true
+        },
+        "start": {
+          "date": "2022-06-24"
+        },
+        "end": {
+          "date": "2022-06-25"
+        },
+        "transparency": "transparent",
+        "iCalUID": "50hbra6sionr7jrrfkq281usv1@google.com",
+        "sequence": 0,
+        "reminders": {
+          "useDefault": false
+        },
+        "eventType": "default"
+      },
+      {
+        "kind": "calendar#event",
+        "etag": "\"3310731980698000\"",
+        "id": "0ftivkp3ftfpslmj2d53hp4v0g",
+        "status": "confirmed",
+        "htmlLink": "https://www.google.com/calendar/event?eid=MGZ0aXZrcDNmdGZwc2xtajJkNTNocDR2MGcgY192b2t2YmMzc2dpbXNuZ3FmM2ltcHJsbmJwa0Bn",
+        "created": "2022-06-16T07:53:10.000Z",
+        "updated": "2022-06-16T07:53:10.349Z",
+        "summary": "6.21 일정",
+        "creator": {
+          "email": "gunpol@korea.ac.kr"
+        },
+        "organizer": {
+          "email": "c_vokvbc3sgimsngqf3imprlnbpk@group.calendar.google.com",
+          "displayName": "Waffle_0",
+          "self": true
+        },
+        "start": {
+          "date": "2022-06-21"
+        },
+        "end": {
+          "date": "2022-06-22"
+        },
+        "transparency": "transparent",
+        "iCalUID": "0ftivkp3ftfpslmj2d53hp4v0g@google.com",
+        "sequence": 0,
+        "reminders": {
+          "useDefault": false
+        },
+        "eventType": "default"
+      },
+      {
+        "kind": "calendar#event",
+        "etag": "\"3310731993942000\"",
+        "id": "6ac9e7t7tf5hskdtprnlf8i2vn",
+        "status": "confirmed",
+        "htmlLink": "https://www.google.com/calendar/event?eid=NmFjOWU3dDd0ZjVoc2tkdHBybmxmOGkydm4gY192b2t2YmMzc2dpbXNuZ3FmM2ltcHJsbmJwa0Bn",
+        "created": "2022-06-16T07:53:16.000Z",
+        "updated": "2022-06-16T07:53:16.971Z",
+        "summary": "6.17 일정",
+        "creator": {
+          "email": "gunpol@korea.ac.kr"
+        },
+        "organizer": {
+          "email": "c_vokvbc3sgimsngqf3imprlnbpk@group.calendar.google.com",
+          "displayName": "Waffle_0",
+          "self": true
+        },
+        "start": {
+          "date": "2022-06-17"
+        },
+        "end": {
+          "date": "2022-06-18"
+        },
+        "transparency": "transparent",
+        "iCalUID": "6ac9e7t7tf5hskdtprnlf8i2vn@google.com",
+        "sequence": 0,
+        "reminders": {
+          "useDefault": false
+        },
+        "eventType": "default"
+      }
+    ]
+  },
+  "calName": "Waffle_0",
+  "hashTags": ["수강신청", "시험", "안전교육"],
+  "profile": {
+    "provider": "google",
+    "sub": "115987064282754163674",
+    "id": "115987064282754163674",
+    "displayName": "김건",
+    "name": {
+      "givenName": "건",
+      "familyName": "김"
+    },
+    "given_name": "건",
+    "family_name": "김",
+    "email_verified": true,
+    "verified": true,
+    "language": "ko",
+    "email": "gunpoll823@gmail.com",
+    "emails": [
+      {
+        "value": "gunpoll823@gmail.com",
+        "type": "account"
+      }
+    ],
+    "photos": [
+      {
+        "value": "https://lh3.googleusercontent.com/a/AATXAJwGt3FNeHqem8dCIvZTaxL6OhGswz44n5vqQQ7hIg=s96-c",
+        "type": "default"
+      }
+    ],
+    "picture": "https://lh3.googleusercontent.com/a/AATXAJwGt3FNeHqem8dCIvZTaxL6OhGswz44n5vqQQ7hIg=s96-c",
+    "_raw": "{\n  \"sub\": \"115987064282754163674\",\n  \"name\": \"김건\",\n  \"given_name\": \"건\",\n  \"family_name\": \"김\",\n  \"picture\": \"https://lh3.googleusercontent.com/a/AATXAJwGt3FNeHqem8dCIvZTaxL6OhGswz44n5vqQQ7hIg\\u003ds96-c\",\n  \"email\": \"gunpoll823@gmail.com\",\n  \"email_verified\": true,\n  \"locale\": \"ko\"\n}",
+    "_json": {
+      "sub": "115987064282754163674",
+      "name": "김건",
+      "given_name": "건",
+      "family_name": "김",
+      "picture": "https://lh3.googleusercontent.com/a/AATXAJwGt3FNeHqem8dCIvZTaxL6OhGswz44n5vqQQ7hIg=s96-c",
+      "email": "gunpoll823@gmail.com",
+      "email_verified": true,
+      "locale": "ko"
+    }
+  },
+  "subscribed": true
+}
