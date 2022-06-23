@@ -8,7 +8,6 @@ import SubscribeCancelBtn from "./SubscribeCancelBtn.js";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import Modal from "../component/Modal.js";
-import { WindowScrollController } from "@fullcalendar/core";
 
 const setData = async (id) => {
   //TODO: get으로 calendarData 받아오기
@@ -19,9 +18,7 @@ const setData = async (id) => {
     response = await axios.get(`http://localhost:3005/cal/${id}`, {
       withCredentials: true,
     });
-  } catch {
-    console.log("calendarpage get failed!");
-  }
+  } catch {}
   const calendarData = response.data;
   console.log(calendarData);
 
