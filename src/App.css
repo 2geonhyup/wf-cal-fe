@@ -433,7 +433,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: 700;
   text-align: center;
   color: #999;
-  background-color: transparent;
+  background-color: white;
 }
 .modal > section  main {
   height: 200px;
@@ -462,6 +462,10 @@ input[type="search"]::-webkit-search-results-decoration {
   border: none;
   margin: 15px;
 }
+.modal form {
+  background-color: white;
+}
+
 .modal form > button {
   position: absolute;
   margin-left: auto;

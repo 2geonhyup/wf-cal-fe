@@ -1,16 +1,15 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Calendar from "./Calendar.js";
-//import calendarData from "../jsonData/calendarData.json";
 import LoginBtn from "../component/LoginBtn.js";
 import SubscribeBtn from "./SubscribeBtn.js";
 import SubscribeCancelBtn from "./SubscribeCancelBtn.js";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import Modal from "../component/Modal.js";
+import Loading from "../component/Loading.js";
 
 const setData = async (id) => {
-  //TODO: get으로 calendarData 받아오기
   let response;
 
   // get 요청
@@ -18,7 +17,10 @@ const setData = async (id) => {
     response = await axios.get(`http://localhost:3005/cal/${id}`, {
       withCredentials: true,
     });
-  } catch {}
+  } catch {
+    console.log("calendarpage get failed!");
+    window.location.replace(`/calendar/${id}`);
+  }
   const calendarData = response.data;
   console.log(calendarData);
 
@@ -59,6 +61,7 @@ const unsubscribe = async (id) => {
 };
 
 function CalendarPage() {
+  const [loading, setLoading] = useState(true);
   let params = useParams();
   const [calName, setCalName] = useState("");
   const [loginState, setLoginState] = useState("");
@@ -66,6 +69,7 @@ function CalendarPage() {
   const [subscribe, setSubscribe] = useState(false);
   useEffect(() => {
     async function ex() {
+      setLoading(true);
       const data = await setData(params.calendarId);
       if (data.userName === "") {
         setLoginState("로그인");
@@ -74,9 +78,11 @@ function CalendarPage() {
       }
       setCalName(data.calName);
       setEventList(data.itemList);
+
       setSubscribe(
         data.subscribe !== "no subscribers" && data.subscribe !== false
       );
+      setLoading(false);
     }
     ex();
   }, [params.calendarId]);
@@ -94,7 +100,6 @@ function CalendarPage() {
   };
 
   const addEvent = async () => {
-    console.log(startDate, startTime);
     await axios.post(
       `http://localhost:3005/cal/${params.calendarId}/event/create`,
       {
@@ -109,10 +114,12 @@ function CalendarPage() {
       }
     );
     closeModal();
+    window.location.replace(`/calendar/${params.calendarId}`);
   };
 
   return (
     <div className="cal-page">
+      {loading ? <Loading /> : null}
       <LoginBtn loginState={loginState} />
       <div className="center-col">
         <div className="cal-title">{calName}</div>

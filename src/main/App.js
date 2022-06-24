@@ -8,6 +8,7 @@ import LoginBtn from "../component/LoginBtn";
 import CalendarBtn from "./CalendarBtn";
 import axios from "axios";
 import Modal from "../component/Modal";
+import Loading from "../component/Loading";
 
 const setData = async () => {
   let userName = "";
@@ -36,13 +37,14 @@ const setData = async () => {
 };
 
 function App() {
-  console.log("hi");
+  const [loading, setLoading] = useState(true);
 
   const [searchTerm, setSearchTerm] = useState("");
   const [loginState, setLoginState] = useState("");
   const [calendarList, setCalendarList] = useState([]);
 
   async function ex() {
+    setLoading(true);
     try {
       const data = await setData();
       if (data.userName === "") {
@@ -51,6 +53,7 @@ function App() {
         setLoginState(`로그아웃`);
       }
       setCalendarList(data.calendarList);
+      setLoading(false);
     } catch {
       console.log("app.js erre");
     }
@@ -64,7 +67,9 @@ function App() {
 
   const [modalOpen, setModalOpen] = useState(false);
   const [calName, setCalName] = useState("");
-  const [hashTags, setHashTags] = useState([]);
+  const [hashTag1, setHashTag1] = useState("");
+  const [hashTag2, setHashTag2] = useState("");
+  const [hashTag3, setHashTag3] = useState("");
 
   const openModal = () => {
     setModalOpen(true);
@@ -74,12 +79,11 @@ function App() {
   };
 
   const addCal = async () => {
-    console.log(hashTags);
     await axios.post("http://localhost:3005/cal/create", {
       summary: calName,
-      hashtags: hashTags,
+      hashtags: [hashTag1, hashTag2, hashTag3],
     });
-    closeModal();
+    // closeModal();
   };
 
   return (
@@ -100,22 +104,25 @@ function App() {
           <input
             placeholder="태그1"
             onChange={(e) => {
-              setHashTags([...hashTags, e.target.value]);
+              setHashTag1(e.target.value);
             }}
           ></input>
           <input
             placeholder="태그2"
             onChange={(e) => {
-              setHashTags([...hashTags, e.target.value]);
+              setHashTag2(e.target.value);
             }}
           ></input>
           <input
             placeholder="태그3"
             onChange={(e) => {
-              setHashTags([...hashTags, e.target.value]);
+              setHashTag3(e.target.value);
+              console.log(hashTag1, hashTag2, hashTag3);
             }}
           ></input>
-          <button onClick={addCal}>추가하기</button>
+          <button type="submit" onClick={addCal}>
+            추가하기
+          </button>
         </form>
       </Modal>
       <CalendarBtn addEvent={openModal} />

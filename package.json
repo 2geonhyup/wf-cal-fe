@@ -20,6 +20,7 @@
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -46,5 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy":"http://localhost:3005"
+  "proxy": "http://localhost:3005"
 }

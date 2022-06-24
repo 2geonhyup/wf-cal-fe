@@ -5,7 +5,12 @@ import moment from "moment";
 const getDateList = (eventList) => {
   let dateList = [];
   eventList.forEach((e) => {
-    dateList.push([e.start.date, e.summary]);
+    if (e.start.dateTime) {
+      dateList.push([e.start.dateTime.slice(0, 10), e.summary]);
+      console.log(dateList);
+    } else {
+      dateList.push([e.start.date, e.summary]);
+    }
   });
 
   return dateList;
